@@ -94,6 +94,9 @@ class Builder
 			$vars[$base_key . '-rgb-r'] = $color->getRgb()['R'];
 			$vars[$base_key . '-rgb-g'] = $color->getRgb()['G'];
 			$vars[$base_key . '-rgb-b'] = $color->getRgb()['B'];
+			$vars[$base_key . '-rgb-dec-r'] = $color->getRgb()['R'] / 256;
+			$vars[$base_key . '-rgb-dec-g'] = $color->getRgb()['G'] / 256;
+			$vars[$base_key . '-rgb-dec-b'] = $color->getRgb()['B'] / 256;
 		}
 		
 		return $vars;
